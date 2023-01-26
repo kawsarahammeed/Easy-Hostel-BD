@@ -1,0 +1,407 @@
+/*................................START HERO SECTION.............. .......... */
+
+.hero-container{
+    margin-top: 101px;
+    background-image: url('../../../Img/hero.jpg');
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%) ;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 5px solid var(--color-primary);
+    border-right: 5px solid var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;  
+    overflow: hidden;
+}
+.overly{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.322);    
+}
+.hero-content{
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.hero-title{
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--color-friendly);
+    line-height: 70px;
+    margin-bottom: 30px;
+    width: fit-content;    
+}
+.hero-des{
+    font-size: 14px;
+    padding:0 160px;
+    text-align: center;
+    width: fit-content;
+    color: var(--color-friendly);
+    margin-bottom: 20px;
+}
+.hero-button{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.hero-social{
+    display: flex;
+    gap: 10px;
+}
+.hero-social a {
+    font-size: 22px;
+    color: var(--color-friendly);
+    padding: 15px 16Px;
+    background: rgba(0, 0, 0, 0.186);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.hero-social a:hover{
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+/*...............l..............END HERO SECTION................. .......... */
+
+
+
+
+
+/*.............................START SERVICE SECTION............. .......... */
+.service-container{
+    max-width: 1100px;
+}
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    text-align: center;
+    margin: 30px auto;      
+}
+.service-box{
+    background: var(--color-friendly);
+    padding: 30px;
+    border-radius: 4px;   
+}
+.service-box:hover{
+    box-shadow: .2rem 0 1rem rgba(0, 0, 0, 0.7);
+}
+.service-icon{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+.service-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+.service-box p{
+    margin-bottom: 20px;
+    color: var(--color-dark);
+}
+.service-box:hover .service-icon{
+    color: var(--color-danger);
+}
+.service-box:hover .service-title{
+    color: var(--color-danger);
+}
+.service-box:hover p{
+    color: var(--color-danger);
+}
+
+/*...............................END SERVICE SECTION................ .......... */
+
+
+
+
+/*..............................START GALLERY SECTION.................... .......... */
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-wihte);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;  
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+/*....................................END GALLERY SECTION............... .......... */
+
+
+
+
+/*....................................START Branches SECTION................. .......... */
+
+.Branches-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px auto;
+}
+.Branches-img-box{
+    position: relative;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    overflow: hidden;   
+    margin: 0 auto;
+}
+.Branches-img-box img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: -1;
+}
+.Branches-shadow{
+    position: absolute;   
+    background: linear-gradient(#00ff913c 20%,  #008cffa6  100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%; 
+    z-index: 1;   
+}
+.Branches-img-box:hover img{
+    transform: scale(1.2);
+} 
+.Branches-img-box:hover .Branches-shadow{
+    bottom: 0;
+    z-index: 1;
+}
+.Branches-social{
+    display: flex;
+    gap: 24px;    
+    justify-content: center;
+    align-items: center;
+}
+
+.Branches-social a {
+    font-size: 22px;
+    color: var(--color-friendly);
+    padding: 15px 16Px;
+    background: rgba(0, 0, 0, 0.186);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.Branches-social a:hover{
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+.Branches-dec{
+    text-align: center;
+}
+.Branches-dec h4  {
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    margin: 10px auto;
+    color: var(--color-danger);
+}
+.Branches-dec p{
+    color: var(--color-primary);
+}
+/*...............................START Branches SECTION........... .......... */
+
+
+
+
+
+
+
+
+
+/*........................................START MEDIAQUERY........... ............ */
+/*.........................................START MEDIAQUERY ........... .......... */
+
+/*...............................START MEDIAQUERY 1100px........... .......... */
+@media (max-width:1100px) {
+    /*........ HERO......... */ 
+    .hero-container{
+        margin-top: 80px;
+    }
+    .hero-title{
+        font-size: 60px;
+    }
+    .hero-des{
+        padding: 0 124px;
+    }  
+    /*  */
+    /*........SERVICE......... */ 
+    .service-container{
+        max-width: 1140px;
+        width: 90%;
+    }
+    .service-icon{
+        margin-bottom: 15px;
+    }   
+    .service-box p{
+        margin-bottom: 20px;
+    }    
+ 
+}
+/*.....................................START MEDIAQUERY 991px................. .......... */
+@media (max-width:991px) {
+    /*........ HERO......... */ 
+    .hero-des{
+        padding: 0 40px;
+    }  
+    /*........SERVICE......... */ 
+    .service-container{
+        width: 82%;
+    }
+    .service-content{  
+        grid-template-columns: repeat(2,1fr);  
+        gap: 20px;        
+    }
+    
+}
+/*.........................................START MEDIAQUERY 768px................... .......... */
+@media (max-width:768px) {
+    /*........ HERO......... */     
+    .hero-title{
+        padding: 0 10px;  
+    }
+    .hero-title{
+        font-size: 56px;
+    }
+    .hero-des{
+        font-size: 14px;
+        padding: 0 30px;
+        margin-bottom: 20px;
+    } 
+    .hero-social a{
+        padding: 12px 13px;
+    }
+     /*........SERVICE......... */ 
+     .service-content{
+        gap: 20px;         
+    }
+    /*........Gallery......... */ 
+    .gallery-container{
+        width: 92%;
+    }
+    /*........Branches....... */
+    .Branches-content{
+        grid-template-columns: 1fr;    
+        
+    }
+    
+}
+/*...........................................START MEDIAQUERY 600px........... .......... */
+@media (max-width:600px) {
+    /*........ HERO......... */    
+    .hero-des{
+        padding: 0 15px;
+        margin-bottom: 20px;
+    } 
+    .hero-button{
+        margin-bottom: 25px;
+    }
+    /*........SERVICE......... */ 
+    .service-container{
+        width: 84%;
+    }
+    .service-content{
+       grid-template-columns: 1fr;   
+       gap: 20px;    
+    }
+    .service-box{
+        background: var(--color-friendly);
+        padding: 30px;
+        border-radius: 4px;   
+    } 
+}
+/*.........................................START MEDIAQUERY 512px..................... ..... */
+@media (max-width:512px){
+    /*........ HERO......... */ 
+    .hero-title{
+        font-size: 50px;
+    }
+    .hero-des{
+        padding: 0 10px;
+    } 
+    /*........ Gallery......... */ 
+    .gallery-container{
+        width: 84%;
+    }
+}
+/*..........................................START MEDIAQUERY 436px........... .......... */
+@media (max-width:436px){
+    /*........ HERO......... */ 
+    .hero-des{
+        padding: 0 5px;
+    } 
+    .hero-title{
+        font-size: 44px;
+    }
+    /*........Branches....... */
+    .Branches-content{      
+        gap: 30px;
+        padding-top: 20px;  
+    }
+    .Branches-img-box{
+        height: 14rem;            
+        width: 14rem;            
+    }
+}
+/*.........................................START MEDIAQUERY 375px........... .......... */
+@media (max-width:375px){  
+    /*........ HERO......... */ 
+    .hero-title{
+        font-size: 33px;
+        width: 100%;
+    }
+    .hero-des{
+        padding: 3px;
+    }    
+    .hero-social a{
+        padding: 10px 11px;
+        margin-bottom: 1rem;
+    } 
+
+}
+@media (max-width:300px){  
+    /*........ HERO......... */ 
+    .hero-title{
+        font-size: 32px;
+    }
+}
+/*.................END MEDIAQUERY ........... .......... */
+/*.................END MEDIAQUERY ........... .......... */

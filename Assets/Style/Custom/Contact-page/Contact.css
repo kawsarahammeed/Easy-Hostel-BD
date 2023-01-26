@@ -1,0 +1,53 @@
+/*.................START CONTACT PAGE CONTACT SECTION............... */
+.Contact-page{
+    margin-top: 160px;
+}
+.place-location-container{     
+    text-align: center;
+    margin: 30px auto;
+}
+.place-location .location-description h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.place-location .location-description .place-location p i{
+    font-size: 30px;
+    color: var(--color-danger);
+}
+.place-location .location-description .place-location h5{
+    font-size: 20px;
+    font-weight: 400;
+    color:var(--color-danger);
+}
+.place-location .location-description .place-location div p{
+    padding: 10px 30px;
+    color: var(--color-primary);
+}
+iframe{
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;  
+}
+/*.................END CONTACT PAGE CONTACT SECTION............... */
+
+
+/*.................START MEDIA SCRIN CONTACT PAGE CONTACT SECTION............... */
+/*................. MEDIA SCRIN 991PX............... */
+@media (max-width:991px) {
+    .place-location-container{ 
+        width: 90%;      
+     }   
+}
+/*................. MEDIA SCRIN 436PX............... */
+@media (max-width:436px) {
+    .place-location-container{ 
+       width: 92%;      
+    }   
+
+}
+/*................. MEDIA SCRIN 375px............... */
+@media (max-width:375px) {        
+  
+}
+/*.................END MEDIA SCRIN CONTACT PAGE CONTACT SECTION............... */

@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  transition: var(--transition);
+  letter-spacing: 0.04px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  background: #f0ffff;
+}
+:root{
+  --color-primary: #0b7f7f;
+  --color-success: #00fff2;
+  --color-danger: #20b2aa;
+  --color-friendly: #00ffaa;
+  --color-dark: #181818;
+  --color-white: #ffff; 
+  --color-black: #000000;
+
+  --transition: .4s ease;
+}
+
+
+/* .........................CUSTOM STYLE........................ */
+p{
+  line-height: 26px;
+  font-size: 14px;
+}
+.container{
+  max-width: 1140px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.main-title{
+  font-size: 3rem;
+  color: var(--color-primary);
+  font-weight: 900;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  line-height: 64px;
+  margin-top: 60px;
+}
+.title-bar{
+  height: 5px;
+  width: 100px;
+  background: var(--color-friendly);
+  margin: 0 auto;
+}
+
+
+
+/*........................CUSTOM BUTTON.................... */
+.btn{
+  padding: 12px 34px;
+  font-size: 17px;
+  display: inline-block;
+  background: transparent;
+  outline: none;
+  font-weight: 500;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+.btn:hover{
+  background: var(--color-white);
+  color: var(--color-dark);
+}
+.btn-primary{
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: transparent;
+}
+.btn-danger{
+  background: var(--color-danger);
+  color: var(--color-white);
+  border: transparent;
+  border: 1px solid var(--color-danger);
+}
+.btn-friendly:hover{
+  color: var(--color-danger);
+}
+.btn-primary:hover{
+  color: var(--color-primary); 
+}
+.more-button{
+  text-align: center;
+  margin-top: 30px;
+}
+.more-button a{
+  border: 1px solid var(--color-primary);
+}
+
+
+
+/* ....................MEDIA SCRIN........................ */
+/*......... LAPTOP........ */
+@media (max-width:1100px) {
+  .main-title{
+    font-size: 2.8rem;    
+    line-height: 80px;
+  }
+}
+/*......... TAB........ */
+@media (max-width:991px) {
+  .btn{
+    padding: 10px 30px;
+    font-size: 15px;    
+  }
+}
+/*.........PHONE........ */
+@media (max-width:76px) {
+  .main-title{
+    font-size: 2rem;    
+    line-height: 80px;
+  }
+}

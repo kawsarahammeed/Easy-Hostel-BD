@@ -1,0 +1,97 @@
+/*............................START SERVICE PAGE SERVICE SECTION......................... */
+.Service-page-Service{
+    margin-top: 160px;
+}
+.service-page-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.service-title{
+    font-size: 20px ;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 40px;
+    font-weight: 700;
+    color: var(--color-danger);
+}
+.sivice-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto;
+    gap: 40px;
+    padding-top: 30px;
+}
+.sivice-list li{
+    display: flex;
+    align-self: flex-start;
+    gap: 10px;    
+}
+.sivice-list li{
+    font-size: 16px;
+    line-height: 36px;
+    color: var(--color-primary);
+}
+.sivice-list li .poient{
+    background: var(--color-friendly);
+    height: max-content;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: var(--color-white);
+}
+.sivice-list li:hover{
+    color: var(--color-danger);
+}
+.sivice-list li:hover .poient{
+    background: var(--color-primary);
+}
+/*............................END SERVICE PAGE SERVICE SECTION......................... */
+
+
+
+/*....................START MEDIASCRIN SERVICE PAGE SERVICE SECTION................. */
+/* ...........MEDIA QUERY 1100PX........... */
+@media (max-width:1100px) {
+    .service-page-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .Service-page-Service{
+        margin-top: 140px;
+    }
+}
+/* ...........MEDIA QUERY 768px........... */
+@media (max-width:768px) {
+    .service-title{
+        padding: 0 20px;
+        font-size: 18px;
+    }
+    .service-page-container{
+        width: 92%;
+    }
+    .sivice-list{
+        display: grid;
+        grid-template-columns: 1fr ;   
+        gap: 40px;
+    }
+}
+/* ...........MEDIA QUERY 436px........... */
+@media (max-width:436px) {
+    .sivice-list li{
+        font-size: 14px;  
+        line-height: 32px;
+    }
+    .service-title{
+        padding: 0 10px;
+    }
+    .sivice-list li .poient{
+        background: var(--color-friendly);
+        height: max-content;
+        padding: 4px 9px;
+        font-size: 16px;
+        color: var(--color-white);
+    }
+}
+
+/*.....................END MEDIASCRIN SERVICE PAGE SERVICE SECTION.................. */

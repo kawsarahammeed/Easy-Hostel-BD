@@ -1,0 +1,65 @@
+/*.........................START FOOTER........................... */
+footer{
+    padding: 40px 0;
+    width: 100%;
+    background: var(--color-success);
+    z-index: 10;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-left-content ul li a{
+    color: var(--color-dark);
+}
+.footer-left-content ul li a:hover{
+    color: var(--color-danger);
+}
+.footer-right-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.footer-right-content p{
+    color: slategray;
+    font-size: 13px;
+}
+.footer-social{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-social a {
+    font-size: 22px;
+    color: var(--color-primary);
+    padding: 15px 16Px;
+    background: rgba(0, 0, 0, 0.186);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.footer-social a:hover{
+    background: var(--color-white);
+    color: var(--color-danger);
+}
+/*.........................START FOOTER........................... */
+
+
+/*.........................MEDID QUERY 768PX........................... */
+@media (max-width:768px) {
+    .footer-container{
+        flex-direction: column;
+        gap: 30px ;
+        text-align: center;
+    } 
+    .footer-social{
+        margin: 0 auto;
+    }
+}
